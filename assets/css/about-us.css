@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+     --main-color: #1C1B1F;
+     --light-color: #EBEBEB;
+     --second-light-color: #b0b0b0;
+     --secondry-color: #A86554;
+     --yelow-color: #EAE6D2;
+
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Cairo', sans-serif;
+     background-color: var(--main-color);
+}
+
+ol, ul {
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+     color: var(--light-color);
+}
+
+.btn {
+     font-size: 17px;
+     padding: 10px 20px;
+     font-weight: bold;
+     background-color: var(--secondry-color);
+     font-family: 'Cairo', sans-serif;
+     color: var(--light-color);
+     border-radius: 5px;
+}
+
+/* ---------------------------------Hero------------------------------------------ */
+
+.container {
+     max-width: 80%;
+     margin: auto;
+}
+
+.hero {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), #1C1B1F), url('../../assets/images/hero-image.jpg');
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+}
+header {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 0;
+     height: 90px;
+}
+
+header img {
+     width: 150px;
+}
+
+header nav li {
+     display: inline;
+     padding: 0 10px;
+     color: var(--light-color);
+}
+
+.hero-text {
+     text-align: center;
+     height: calc(100vh - 90px);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.hero-text h1 {
+     font-size: 100px;
+     color: var(--light-color);
+     font-weight: bold;
+}
+
+.hero-text p {
+     color: #d4d4d4;
+     margin-bottom: 40px;
+     font-size: 18px;
+}
